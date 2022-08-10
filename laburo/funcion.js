@@ -1,9 +1,10 @@
  //CALCULADORA
- debugger
+ //debugger
  function calculo(){
-    let numeroUnp = prompt ("ingrese el primer valor.")
-    let numeroDos = prompt ("ingrese el segundo valor.")
+    let numeroUno = parseInt(prompt ("ingrese el primer valor."))
+    let numeroDos = parseInt(prompt ("ingrese el segundo valor."))
     let operacion = prompt ("Indique la operacion")
+        console.log(hacerCalculo(numeroUno, numeroDos, operacion))
  }
 
  function hacerCalculo(num1, num2, operador){
