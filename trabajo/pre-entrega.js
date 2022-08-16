@@ -17,10 +17,10 @@ for (let i = 1; i < monto; i++){
 
 //-----CLASES--
 class Caballo{ 
-        constructor(nombre, color, puesto){
+        constructor(nombre, color, numero){
                 this.nombre = nombre
                 this.color = color
-                this.puesto = puesto}
+                this.numero = numero}
 }
 
 const cab1 = new Caballo("Galio", "Negro", 17)
