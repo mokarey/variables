@@ -1,18 +1,6 @@
 //-----INICIO--
-let edad = parseInt(prompt("Ingresar la edad para continuar"));
+//
 
-if (edad > 17) {
-    alert("Eres mayor de edad! Bienvenido.");
-}
-else {
-alert("No eres mayor de edad.")
-}
-
-
-let monto = parseInt(prompt("Ingrese la cantidad deseada"))
-for (let i = 1; i < monto; i++){
-    console.log ("Primera", i)
-}
 
 
 //-----CLASES--
@@ -32,6 +20,7 @@ const cab4 = new Caballo("Paco", "Blanco", 21)
 const caballos = ['Galio', 'Titan', 'Book', 'Paco']
 const colores = ['Negro', 'Gris', 'Beige', 'Blanco']
 const numeros = ['17', '11', '8', '21']
+const numero = ['1', '2', '3', '4']
 
 //-----FUNCIONES--
 function mostrarCompetidores(){
@@ -66,4 +55,35 @@ function agregarNumero (){
         let nuevoNumero = parseInt(prompt ("Ingrese el numero de su competidor."))
                 numeros.push(nuevoNumero)
     }
+//-----DOM
+function listarCaballos(){
+        const lista = document.getElementById("lista")
+        caballos.forEach(caballo => {
+                const  li = document.createElement("li")
+                li.innerText = caballo
+                lista.append(li)
+        })
+}
+listarCaballos()
+
+function lista1(){
+        const listar = document.getElementById("listar")
+        numero.forEach(num => {
+                const  option = document.createElement("option")
+                option.innerText = num
+                listar.append(option)
+        })
+}
+lista1()
+//-----EVENTOS
+
+const lista2 = document.querySelector(".btn")
+
+lista2.addEventListener("click", ()=>{
+        console.log("Elegir favorito")})
+
+
+
+
+
 //-----
